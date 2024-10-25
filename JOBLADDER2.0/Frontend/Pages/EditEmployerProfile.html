@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-8">
+      <nav class="mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-bold animate-bounce ml-10">
+          EMPLOYER PROFILE
+        </h1>
+        <ul class="flex items-center gap-8 mr-10">
+          <li>
+            <a href="#" class="hover:text-blue-300 text-2xl font-bold"
+              >LOGOUT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg ml-10 mr-10">
+      <div class="text-center pt-10">
+        <img
+          class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500"
+          src="/Frontend/src/Images/Polish_20230516_022418225.jpg"
+          alt="Employer"
+        />
+        <h2 class="mt-4 text-2xl font-bold animate-bounce">EMPLOYER NAME</h2>
+        <p class="text-blue-600">Employer, JOB LADDER</p>
+      </div>
+
+      <!-- Edit Profile Form -->
+      <div
+        class="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-400 shadow-xl rounded-xl p-12 mt-10 w-4/5 lg:w-1/2 mx-auto transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-l hover:from-blue-300 hover:to-blue-500"
+      >
+        <form class="space-y-6">
+          <h2 class="text-center text-3xl font-bold text-blue-500 mb-8">
+            Edit Employer Details
+          </h2>
+
+          <div class="space-y-2">
+            <label for="employerName" class="block text-lg text-blue-700"
+              >Employer Name:</label
+            >
+            <input
+              type="text"
+              id="employerName"
+              placeholder="Enter employer name"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="email" class="block text-lg text-blue-700"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="phone" class="block text-lg text-blue-700"
+              >Phone Number:</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter phone number"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="location" class="block text-lg text-blue-700"
+              >Location:</label
+            >
+            <input
+              type="text"
+              id="location"
+              placeholder="Enter location"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="flex justify-center">
+            <input
+              type="submit"
+              value="Save Changes"
+              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-3 px-10 rounded-full hover:bg-gradient-to-l hover:from-blue-600 hover:to-blue-700 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer animate-pulse"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="pt-8 text-center mt-10">
+        <a
+          href="/Frontend/Pages/EmployerProfile.html"
+          class="bg-gradient-to-r from-blue-600 to-blue-900 text-white font-bold py-4 px-10 rounded-full hover:bg-gradient-to-l hover:from-blue-900 hover:to-blue-700 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer animate-pulse"
+        >
+          BACK TO PROFILE
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-200 mt-10">
+      <div class="max-w-2xl mx-auto flex gap-40 mb-4 p-6">
+        <div>
+          <p class="font-bold text-4xl text-blue-900">JOB LADDER</p>
+          <p class="mt-4 text-lg text-blue-800">
+            Job Ladder is a comprehensive recruitment platform designed to
+            streamline the hiring process for employers and job seekers.
+          </p>
+        </div>
+        <div class="text-lg">
+          <p class="font-bold text-blue-900">Contacts</p>
+          <div class="flex">
+            <p class="mr-1 text-blue-800">Phone:</p>
+            <a href="tel:+918281422036" class="hover:text-blue-600"
+              >+918281422036</a
+            >
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-blue-800">Email:</p>
+            <a href="mailto:info@jobladder.com" class="hover:text-blue-600"
+              >info@jobladder.com</a
+            >
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-blue-800">Address:</p>
+            <a
+              href="https://www.google.com/maps"
+              target="_blank"
+              class="hover:text-blue-600"
+              >Thiruvananthapuram, Kerala, India</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between p-4 bg-blue-600 text-white">
+        <p>© JOB LADDER - OCT 2024</p>
+        <ul class="flex space-x-5">
+          <li><a href="/" class="hover:text-blue-300">Privacy Policy</a></li>
+          <li>
+            <a href="/" class="hover:text-blue-300">Terms & Conditions</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

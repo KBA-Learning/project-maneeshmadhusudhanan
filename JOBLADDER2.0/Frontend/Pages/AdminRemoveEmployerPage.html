@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Remove Employer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- >>>>>>>>>>>>>Nav Bar>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div>
+      <header class="bg-blue-400 text-white py-6">
+        <nav class="mx-auto flex justify-between items-center">
+          <img
+            style="width: 200px; height: 150px; padding-left: 50px"
+            src="/Frontend/src/Images/JOB LADDER.jpg"
+            alt="JOB LADDER Logo"
+          />
+          <a
+            href="#"
+            class="animate-bounce mr-96 text-5xl font-extrabold text-white"
+            >JOB LADDER</a
+          >
+          <ul class="flex items-center">
+            <li class="mr-4">
+              <a href="#" class="text-3xl mr-16">EMPLOYERS LIST</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Remove Employer Form -->
+    <div class="container ml-40 mb-10 justify-items-center">
+      <div
+        class="mt-10 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-400 shadow-xl rounded-xl p-12 animate-fadeIn w-4/5 lg:w-1/2 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300"
+      >
+        <form class="space-y-6">
+          <h2 class="text-center text-3xl font-bold text-red-900 mb-8">
+            REMOVE EMPLOYER
+          </h2>
+
+          <div class="space-y-2">
+            <label for="employerName" class="block text-lg text-blue-700"
+              >EMPLOYER NAME:</label
+            >
+            <input
+              type="text"
+              id="employerName"
+              placeholder="Enter Employer Full Name"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="jobPosition" class="block text-lg text-blue-700"
+              >JOB POSITION:</label
+            >
+            <input
+              type="text"
+              id="jobPosition"
+              placeholder="Enter Job Position"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="emailAddress" class="block text-lg text-blue-700"
+              >Email Address:</label
+            >
+            <input
+              type="email"
+              id="emailAddress"
+              placeholder="Enter Email Address"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="reason" class="block text-lg text-blue-700"
+              >Reason for Removal:</label
+            >
+            <textarea
+              id="reason"
+              placeholder="Enter Reason for Removal"
+              requiblue
+              class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition h-32"
+            ></textarea>
+          </div>
+
+          <div class="flex justify-center">
+            <input
+              type="submit"
+              value="REMOVE EMPLOYER"
+              class="bg-gradient-to-r from-blue-600 to-red-900 text-white font-bold py-3 px-10 rounded-full hover:bg-gradient-to-l hover:from-red-600 hover:to-blue-900 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer animate-pulse"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-blue-200">
+      <div class="max-w-2 ml-10 mr-10">
+        <div class="gap-40 mb-4 flex">
+          <div class="sm:col-span-2">
+            <p class="font-bold text-9xl">JOB LADDER</p>
+          </div>
+          <div class="mt-4 text-xl">
+            <p class="text-base font-bold tracking-wide text-blue-900">
+              Contacts
+            </p>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Phone:</p>
+              <a
+                href="tel:850-123-5021"
+                aria-label="Our phone"
+                title="Our phone"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                +918281422036
+              </a>
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Email:</p>
+              <a
+                href="mailto:info@lorem.mail"
+                aria-label="Our email"
+                title="Our email"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                maneeshroks@gmail.com
+              </a>
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Address:</p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                Thiruvananthapuram, KERALA, INDIA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row bg-blue-600 pl-4 pr-4"
+      >
+        <p class="text-sm text-white">© MANEESH@KBA.in OCT-24-2024</p>
+        <ul
+          class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+        >
+          <li>
+            <a
+              href="/"
+              class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >KBA Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Ladder - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-violet-50 min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-16 group hover:w-64 bg-violet-600 text-white transition-all duration-300 min-h-screen flex flex-col">
+        <div class="flex items-center p-4">
+            <img src="/Frontend/src/Images/Polish_20230516_022418225.jpg" alt="Profile Picture"
+                class="rounded-full w-12 h-12">
+            <span class="hidden group-hover:block text-xl font-semibold">JOB LADDER</span>
+        </div>
+        <hr class="border-violet-100 mx-4"/>
+        <nav class="flex-1">
+            <ul class="mt-4 space-y-2">
+                <li><a href="#" class="p-4 hover:bg-violet-500 rounded-lg block">Home</a></li>
+                <li><a href="/Frontend/Pages/AdminProfile.html" class="p-4 hover:bg-violet-500 rounded-lg block">Admin Profile</a></li>
+                <li><a href="/Frontend/Pages/EmployerProfile.html" class="p-4 hover:bg-violet-500 rounded-lg block">Employer Profile</a></li>
+                <li><a href="#" class="p-4 hover:bg-violet-500 rounded-lg block">Search Jobs</a></li>
+            </ul>
+        </nav>
+        <button class="bg-blue-900 hover:bg-violet-500 text-white py-2 px-4 mx-4 mb-4 rounded-lg">
+            <a href="/Frontend/Pages/IndexPage.html">LOGOUT</a>
+        </button>
+    </aside>
+
+    <main class="flex-1 p-8">
+        <header class="bg-violet-500 text-white py-6">
+            <nav class="flex justify-between items-center">
+                <img src="/Frontend/src/Images/JOB LADDER.jpg" style="width: 150px;">
+                <a class="animate-bounce text-5xl font-extrabold">JOB LADDER</a>
+                <ul class="flex items-center">
+                    <li class="mr-6"><a class="text-3xl">EMPLOYERS</a></li>
+                    <li><a href="/Frontend/Pages/IndexPage.html" class="font-extrabold text-3xl">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="text-4xl text-center mt-10 animate-bounce font-bold text-blue-600">WELCOME TO JOB LADDER</h1>
+
+        <div class="flex gap-6 justify-center mt-10">
+            <input type="search" placeholder="Search Job" class="w-1/2 border-2 border-blue-600 rounded-lg pl-10 text-xl h-16">
+            <button class="bg-blue-600 hover:bg-blue-900 text-white px-6 py-2 rounded-lg text-xl">SEARCH</button>
+        </div>
+
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="border-4 border-blue-400 rounded-md p-8 shadow-lg">
+                    <h2 class="text-2xl font-bold">Recent Jobs</h2>
+                    <ul>
+                        <li>Frontend Developer - Remote</li>
+                        <li>Backend Developer - Full-time</li>
+                    </ul>
+                </div>
+                <div class="border-4 border-blue-400 rounded-md p-8 shadow-lg">
+                    <h2 class="text-2xl font-bold">Job Applications</h2>
+                    <p>You have 5 new applications!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

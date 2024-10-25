@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100">
+
+    <header class="bg-blue-600 text-white py-6 pt-10">
+        <nav class=" mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold animate-bounce ml-10 ">ADMIN PROFILE</h1>
+            <ul class="flex items-center gap-8 mr-10">
+                
+                <li><a href="#" class="hover:text-blue-300 text-2xl font-bold ">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class=" mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg ml-10 mr-10">
+        <div class="text-center pt-10">
+            <img id="AdminImage" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500" src="/Frontend/src/Images/Polish_20230516_022418225.jpg" alt="Admin">
+            <h2 class="mt-4 text-2xl font-bold animate-bounce">ADMIN MANEESH</h2>
+            <p class="text-blue-600">Admin, JOB LADDER</p>
+        </div>
+
+        <!-- <div class="mt-6 ml-10 mr-10">
+            <h3 class="text-lg font-semibold mb-2">ACCOUNT INFORMATION</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <p>Email: maneeshroks@gmail.com</p>
+                <p>Phone: +918281422036</p>
+                <p>Location: Technopark</p>
+                <p>Role: Admin</p>
+            </div>
+        </div> -->
+
+
+    <!-- Add  Form -->
+
+
+
+
+<div class="pl-96 ml-80">
+
+    <div class="  bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400 shadow-xl rounded-xl p-12 animate-fadeIn w-4/5 lg:w-1/2 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-300 hover:to-blue-500">
+      <form class="space-y-6">
+          <h2 class="text-center text-3xl font-bold text-blue-800 mb-8">EDIT ADMIN PROFILE</h2>
+
+          <div class="space-y-2">
+              <label for="bookName" class="block text-lg text-blue-700">ADMIN NAME:</label>
+              <input type="text" id="bookName" placeholder="Enter Name" requiblue class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+          </div>
+
+          <div class="space-y-2">
+              <label for="authorName" class="block text-lg text-blue-700">COMPANY NAME:</label>
+              <input type="text" id="authorName" placeholder="ENTER COMPANY NAME" requiblue class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+          </div>
+
+          <div class="space-y-2">
+              <label for="Photo" class=" text-lg text-blue-700">ADD IMAGE:</label>
+              <input type="file" id="AdminImage" requiblue class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+          </div>
+
+          <div class="space-y-2">
+              <label for="description" class="block text-lg text-blue-700">NOTE:</label>
+              <textarea id="NoteAdmin" placeholder="Enter your NOTE" requiblue class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition h-32"></textarea>
+          </div>
+          </div>
+      </form>
+    </div>
+
+
+       
+
+        <div class=" pt-8 text-center mb-10 mt-10">
+
+            <a href="/new/Frontend/src/" class="mb-10 pb-4 text-center bg-gradient-to-r from-blue-600 to-blue-900 text-white font-bold py-4 px-10 rounded-full hover:bg-gradient-to-l hover:from-blue-900 hover:to-blue-900 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer animate-pulse">
+                SAVE ADMIN PROFILE
+            </a>
+            <!-- <button onclick="" class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Edit MY Profile</button> -->
+        </div>
+    </div>
+
+  </div>
+
+       <!-- footer................................. -->
+
+<div class="bg-blue-200 mt-4 ">
+    <div class="max-w-2   ml-10 mr-10  ">
+        <div class=" gap-40 mb-4 flex">
+          <div class="mt-4 text-xl">
+            <p class="text-base font-bold tracking-wide text-blue-900">Contacts</p>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Phone:</p>
+              <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+918281422036</a>
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Email:</p>
+              <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">maneeshroks@gmail.com</a>
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-blue-800">Address:</p>
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                Thiruvananthapuram, KERALA,INDIA
+              </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row bg-blue-600 pl-4 pr-4">
+          <p class="text-sm text-white">
+            © MANEESH@KBA.in OCT-24-2024 
+          </p>
+          <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+            <li>
+              <a href="/" class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">KBA Project</a>
+            </li>
+            <li>
+              <a href="/" class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/" class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

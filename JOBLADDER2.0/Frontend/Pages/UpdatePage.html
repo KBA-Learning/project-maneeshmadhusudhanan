@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Update</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<body class="bg-blue-100 flex items-center justify-center  min-h-screen">
+
+
+   
+
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+        <p class=" pl-4 border border-blue-600 border-solid rounded-sm text-black font-bold">UPDATE YOUR PROFILE </p>
+        <br>
+        <br>
+        <div class="flex flex-col items-center">
+            <!-- Profile Image -->
+            <div class="relative w-20 mb-10 h-24 rounded-full bg-blue-300">
+             <img src="/Frontend/src/Components/Images/Polish_20230516_022418225.jpg" alt="">
+                </span>
+            </div>
+            <!-- Job Title -->
+            <h2 class="text-xl font-semibold mt-4">FULLSTACK DEVELOPER</h2>
+            <p class="text-blue-500">TECHNOPARK</p>
+        </div>
+
+        <!-- Profile Form -->
+        <form class="mt-6 space-y-4">
+            <!-- Name -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-blue-700">Name</label>
+                <input type="text" id="name" name="name" value="Maneesh Madhusudhanan" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm" requiblue>
+            </div>
+
+            <!-- Location -->
+            <div>
+                <label for="location" class="block text-sm font-medium text-blue-700">Location</label>
+                <input type="text" id="location" name="location" value="Thiruvananthapuram / Trivandrum" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm" requiblue>
+            </div>
+
+            <!-- Nationality -->
+            <div>
+                <label for="nationality" class="block text-sm font-medium text-blue-700">Nationality</label>
+                <input type="text" id="nationality" name="nationality" value="Indian" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm" requiblue>
+            </div>
+
+            <!-- Work Authorization -->
+            <div>
+                <label for="work-authorization" class="block text-sm font-medium text-blue-700">Work Authorization For</label>
+                <input type="text" id="work-authorization" name="work-authorization" value="I Don't Have Work Authorization" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm" requiblue>
+            </div>
+
+            <!-- Experience -->
+            <div class="flex space-x-4">
+                <div>
+                    <label for="years" class="block text-sm font-medium text-blue-700">Years</label>
+                    <select id="years" name="years" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm">
+                        <option>1 Years</option>
+                        <option>2 Years</option>
+                        <option>3 Years</option>
+                        <option>4 Years</option>
+                        <option>5 Years</option>
+                        <option>5-10 Years</option>
+                        <option>10-15 Years</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="months" class="block text-sm font-medium text-blue-700">Months</label>
+                    <select id="months" name="months" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm">
+                        <option>1 Month</option>
+                        <option>2 Months</option>
+                        <option>3 Months</option>
+                        <option>4 Months</option>
+                        <option>5 Months</option>
+                        <option>6 Months</option>
+                        <option>7 Months</option>
+                        <option>8 Months</option>
+                        <option>9 Months</option>
+                        <option>10 Months</option>
+                        <option>11 Months</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-blue-700">Email</label>
+                <input type="email" id="email" name="email" value="maneeshroks@gmail.com" class="mt-1 block w-full px-3 py-2 bg-blue-100 border border-blue-600 rounded-md text-sm text-blue-600" requiblue>
+                <p class="text-xs text-blue-600">Verify</p>
+            </div>
+
+            <!-- Save Button -->
+            <div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md mt-4 hover:bg-blue-400">Save</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

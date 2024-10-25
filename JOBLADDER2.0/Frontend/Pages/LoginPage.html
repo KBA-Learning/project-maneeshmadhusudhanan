@@ -1,0 +1,170 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Ladder - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+</div>
+
+
+    <div class="">
+    <header class="bg-blue-600 text-white py-6  ">
+      <nav class="ClassName mx-auto flex justify-between items-center">
+        <img style="width: 200px; height: 150px; padding-left: 50px;" src="/Frontend/src/Images/JOB LADDER.jpg" alt="">
+        <a href="#" class="animate-bounce mr-96 text-5xl font-extrabold text-white  ">JOB LADDER</a>
+        <ul class="flex items-center">
+          <li class="mr-4"><a href="#" class="text-3xl mr-28 hover:first-letter:J border-blue-700">Job Seekers</a></li>
+
+          <li class="mr-4"><a href="#" class="text-3xl mr-16">Employers</a></li>
+
+          <li><a href="/Frontend/Pages/SignupPage.html" class=" font-extrabold text-3xl mr-20">JOIN JOB LADDER</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+
+  <div class="ml-80 mb-10 mt-32  flex  ">
+    <div class="w-full max-w-md p-8 space-y-6 bg-blue-950 border-4  rounded-md shadow-2xl shadow-blue-600 border-blue-600 ">
+      <h2 class="text-3xl font-bold text-center text-blue-800 mt-4">LOGIN TO JOB LADDER</h2>
+      <form class="mt-6">
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-blue-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full p-2 mt-1 border border-blue-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-blue-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full p-2 mt-1 border border-blue-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+          />
+        </div>
+
+
+        <div>
+          <div class="relative inline-block text-left">
+            <div>
+              <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                select
+                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            
+              <!-- Dropdown menu, show/hide based on menu state.
+          
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95" -->
+           
+            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">USER</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">EMPLOYER</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">ADMIN</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input
+              id="remember_me"
+              type="checkbox"
+              class="w-4 h-4 text-blue-600 border-blue-300 rounded"
+            />
+            <label for="remember_me" class="block ml-2 text-sm text-blue-900"
+              >Remember me</label
+            >
+          </div>
+
+          <div class="text-sm">
+            <a href="#" class="text-blue-600 hover:text-blue-500"
+              >Forgot password?</a
+            >
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full px-4 py-2 mt-6 font-bold text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none"
+        ><a href="/Frontend/Pages/HomePage4.html">LOGIN</a>
+          
+        </button>
+      </form>
+
+      <p class="text-sm text-center text-blue-600">
+        Don't have an account?
+        <a href="#" class="text-blue-600 hover:text-blue-900">Sign up</a>
+      </p>
+    </div>
+
+  <div style="padding-left: 300px;">
+
+
+  <h3 class="text-center text-4xl mr-10 ml-10 mb-10 font-extrabold text-gray-600"> We're here to take the stress out of recruiting
+
+    Whether you're looking for temporary, permanent or contract placements, our recruitment consultants are trained to look for more than just skills and experience. We find the right opportunities based on company culture and values.
+    </h3>
+
+    <img style=" width: 350px; height: 500px;" src="/Frontend/src/Images/Ladder guy.gif" alt="">
+    
+    
+      </div>
+    
+  </div>
+
+
+
+
+
+<div class="mt-96 shadow-lg">
+    <footer class="bg-blue-600 text-white py-10 ">
+      <nav class="ClassName mx-auto flex justify-between items-center ml-10">
+        <ul class="flex items-center">
+          <li class="mr-4"><a href="#" class="text-2xl">About Us</a></li>
+
+          <li class="mr-4"><a href="#" class="text-2xl">Contact Us</a></li>
+
+          <li><a href="#" class="text-2xl">Terms of Service</a></li>
+        </ul>
+
+        <ul class="flex items-center mr-10">
+          <li class="mr-4"><a href="#" class="text-xl">Facebook</a></li>
+
+          <li class="mr-4"><a href="#" class="text-xl">Twitter</a></li>
+
+          <li><a href="#" class="text-xl">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  </body>
+</html>

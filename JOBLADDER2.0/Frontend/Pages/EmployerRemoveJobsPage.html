@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer - Remove Jobs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // JavaScript to handle job removal
+        function removeJob(rowId) {
+            const row = document.getElementById(rowId);
+            row.remove();
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <nav class="flex justify-between items-center px-10">
+            <a href="#" class="text-3xl font-extrabold hover:scale-110 transition">JOB LADDER - Employer Dashboard</a>
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:underline">Chat</a></li>
+                <li><a href="#" class="hover:underline">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-8">
+        <h1 class="text-4xl text-center font-bold text-blue-600 animate-bounce">Remove Jobs</h1>
+
+        <section class="mt-10">
+            <table class="w-full mt-6 border shadow-lg">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="p-4">Job Title</th>
+                        <th class="p-4">Job Type</th>
+                        <th class="p-4">Salary</th>
+                        <th class="p-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-blue-50">
+                    <tr id="job1" class="text-center border-b">
+                        <td class="p-4">Software Engineer</td>
+                        <td class="p-4">Full-time</td>
+                        <td class="p-4">$80,000</td>
+                        <td class="p-4">
+                            <button onclick="removeJob('job1')" 
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition transform hover:scale-110">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+                    <tr id="job2" class="text-center border-b">
+                        <td class="p-4">Marketing Specialist</td>
+                        <td class="p-4">Part-time</td>
+                        <td class="p-4">$40,000</td>
+                        <td class="p-4">
+                            <button onclick="removeJob('job2')" 
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition transform hover:scale-110">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+                    <tr id="job3" class="text-center border-b">
+                        <td class="p-4">Data Analyst Intern</td>
+                        <td class="p-4">Internship</td>
+                        <td class="p-4">$20,000</td>
+                        <td class="p-4">
+                            <button onclick="removeJob('job3')" 
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition transform hover:scale-110">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4 mt-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <p>© 2024 JOB LADDER. All rights reserved.</p>
+                <ul class="flex gap-6">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

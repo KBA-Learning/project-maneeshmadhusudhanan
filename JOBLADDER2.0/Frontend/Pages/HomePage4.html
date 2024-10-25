@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<!-- <<<<<<<<<<<<<<<<<<<< Side nav bar<<<<<<<<<<<<<<<<<<<<<<< -->
+  <style>
+    /* Animation for expanding the sidebar */
+    .group:hover .submenu {
+      max-height: 200px;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .submenu {
+      max-height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex">
+
+  <!-- Sidebar  -->
+  <aside class="w-16 group hover:w-64 bg-blue-600 text-white transition-all duration-300 ease-in-out min-h-screen flex flex-col">
+    
+    <!-- Profile Section -->
+    <div class="flex items-center space-x-4 p-4">
+      <img src="/Frontend/src/Images/Polish_20230516_022418225.jpg" alt="Profile Picture"
+        class="rounded-full w-12 h-12">
+      <span class="hidden group-hover:block text-xl font-semibold">JOB LADDER</span>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-blue-100 mx-4" />
+
+    <!-- Sidebar Options -->
+    <nav class="flex-1">
+      <ul class="space-y-2 mt-4">
+
+        <!-- Home -->
+        <li class="submenu-item">
+          <a href="/Frontend/Pages/HomePage4.html" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span  class="hidden group-hover:block">Home</span>
+          </a>
+        </li>
+
+        <!-- Admin Profile -->
+        <li class="submenu-item">
+          <a href="/Frontend/Pages/AdminProfile.html" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Admin Profile</span>
+          </a>
+        </li>
+
+        <!-- Employer Profile -->
+        <li class="submenu-item">
+          <a href="/Frontend/Pages/EmployerProfile.html" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Employer Profile</span>
+          </a>
+        </li>
+
+        <!-- User Profile -->
+        <li class="submenu-item">
+          <a href="/Frontend/Pages/UserProfilePage.html" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">User Profile</span>
+          </a>
+        </li>
+
+        <!-- Search Jobs -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Search Jobs</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Logout Option -->
+    <div class="p-4">
+      <button class="w-full bg-blue-900 hover:bg-blue-500 text-white py-2 px-4 rounded-lg "><a href="/Frontend/Pages/IndexPage.html">LOGOUT</a>
+      </button>
+    </div>
+  </aside>
+
+
+
+  <main class="flex-1  p-8">
+
+
+    
+<!-- <<<<<<<<<<<<<<<<<<<<Navbar>>>>>>>>>>>>>>>>>>>>>>> -->
+<div>
+
+    <div class="">
+        <header class="bg-blue-500 text-white py-6  ">
+          <nav class="ClassName mx-auto flex justify-between items-center">
+            <img style="width: 200px; height: 150px; padding-left: 50px;" src="/Frontend/src/Images/JOB LADDER.jpg" alt="">
+            <a href="#" class="animate-bounce mr-96 text-5xl font-extrabold text-white  ">JOB LADDER</a>
+            <ul class="flex items-center">
+              <li class="mr-4"><a href="#" class="text-3xl mr-28 hover:first-letter:J border-blue-500">Job Seekers</a></li>
+    
+              <li class="mr-4"><a href="#" class="text-3xl mr-16">Employers</a></li>
+    
+              <li><a href="/Frontend/Pages/IndexPage.html" class=" font-extrabold text-3xl mr-20">LOGOUT</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+</div>
+
+    <h1 class="text-4xl font-bold text-blue-600 animate-bounce mt-10 text-center">WELCOME TO JOB LADDER</h1>
+   
+    <br>
+
+
+<main class="">
+    <div class="flex gap-6 justify-center  ">
+       
+            <img class="w-20 h-20 " src="/Frontend/src/Images/SEARCH.png" alt="">
+        
+            <input  placeholder="SEARCH JOB " class="w-4/12 h-20 pl-10 border-2 border-blue-600 rounded-md text-2xl " type="search" name="searchinput" id="SearchID" >
+            <div class="p-4">
+                <button class="w-40 text-2xl bg-blue-600 hover:bg-blue-9s00 text-white py-2 px-4 rounded-lg ">
+                  SEARCH
+                </button>
+              </div>
+       
+    </div>
+</main>
+
+
+
+
+
+<!-- <div class=" justify-center ">
+<div class="">
+<img class="w-20 h-20 " src="/Frontend/src/Images/SEARCH.png" alt="">
+<input  placeholder="SEARCH JOB " class="w-4/12 h-20 pl-10 mt-20 " type="search" name="searchinput" id="SearchID" >
+
+</div>
+</div> -->
+<!-- <<<<<<<<<<<<<<<<<<<<<<< sidenavbar>>>>>>>>>>>>>>>>>>>>>>>>> --> 
+
+
+
+
+<!-- ................................................................................................................. -->
+</div>
+<div class=" flex  gap-4 ml-10 mr-10 mb-10">
+  <div class="  border-4 w-11/12 h-96  rounded-md shadow-2xl shadow-blue-300 border-blue-400  justify-between mt-10 ml-10">
+      <p>JOB tittle</p>
+      <p>Job Description</p>
+      <p>Job Location</p>
+      <p>Job Type</p>
+      <p>Job Salary</p>
+      <p>Job Date</p>
+      <br>
+      <div class="flex justify-center">
+        <input
+          type="submit"
+          value="APPLY "
+          class="  bg-gradient-to-r from-blue-600 to-red-900 text-white font-bold py-3 px-10 rounded-full hover:bg-gradient-to-l hover:from-red-600 hover:to-blue-900 transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer animate-pulse"
+        />
+      </div>
+
+
+  </div>
+  <div class="border-4  w-11/12 h-96 rounded-md shadow-2xl shadow-blue-300 border-blue-400   justify-between mt-10 ml-10">
+      <p>JOB POST</p>
+</div>
+</div>
+<!-- .................................................................................................................. -->
+</div>
+<div class=" flex  gap-4 ml-10 mr-10 mb-10">
+  <div class="  border-4 w-11/12 h-96  rounded-md shadow-2xl shadow-blue-300 border-blue-400  justify-between mt-10 ml-10">
+      <p>JOB POST</p>
+
+
+  </div>
+  <div class="border-4  w-11/12 h-96 rounded-md shadow-2xl shadow-blue-300 border-blue-400   justify-between mt-10 ml-10">
+      <p>JOB POST</p>
+</div>
+</div>
+<!-- .................................................................................................................. -->
+</div>
+<div class=" flex  gap-4 ml-10 mr-10 mb-10">
+  <div class="  border-4 w-11/12 h-96  rounded-md shadow-2xl shadow-blue-300 border-blue-400  justify-between mt-10 ml-10">
+      <p>JOB POST</p>
+
+
+  </div>
+  <div class="border-4  w-11/12 h-96 rounded-md shadow-2xl shadow-blue-300 border-blue-400   justify-between mt-10 ml-10">
+      <p>JOB POST</p>
+</div>
+</div>
+<!-- .................................................................................................................. -->
+
+
+
+ <!-- footer2................................. -->
+
+
+
+  <div class="bg-blue-200 mt-10  ">
+    <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row bg-blue-500 pl-4 pr-4">
+      <p class="text-sm text-white">
+        © MANEESH@KBA.in OCT-24-2024 
+      </p>
+      <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+       
+        <li>
+          <a href="/" class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+        </li>
+      </ul>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+    
+</body>
+</html>

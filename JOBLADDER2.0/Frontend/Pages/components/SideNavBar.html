@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- <<<<<<<<<<<<<<<<<<<< Side nav bar<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+
+
+  <style>
+    /* Animation for expanding the sidebar */
+    .group:hover .submenu {
+      max-height: 200px;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .submenu {
+      max-height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex">
+
+  <!-- Sidebar Container -->
+  <aside class="w-16 group hover:w-64 bg-blue-600 text-white transition-all duration-300 ease-in-out min-h-screen flex flex-col">
+    
+    <!-- Profile Section -->
+    <div class="flex items-center space-x-4 p-4">
+      <img src="/Frontend/src/Images/Polish_20230516_022418225.jpg" alt="Profile Picture"
+        class="rounded-full w-12 h-12">
+      <span class="hidden group-hover:block text-xl font-semibold">JOB LADDER</span>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-blue-100 mx-4" />
+
+    <!-- Sidebar Options -->
+    <nav class="flex-1">
+      <ul class="space-y-2 mt-4">
+
+        <!-- Home -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Home</span>
+          </a>
+        </li>
+
+        <!-- Admin Profile -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Admin Profile</span>
+          </a>
+        </li>
+
+        <!-- Employer Profile -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Employer Profile</span>
+          </a>
+        </li>
+
+        <!-- User Profile -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">User Profile</span>
+          </a>
+        </li>
+
+        <!-- Search Jobs -->
+        <li class="submenu-item">
+          <a href="#" class="flex items-center space-x-4 p-4 hover:bg-blue-500 rounded-lg ">
+            <span class="hidden group-hover:block">Search Jobs</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Logout Option -->
+    <div class="p-4">
+      <button class="w-full bg-blue-600 hover:bg-blue-9s00 text-white py-2 px-4 rounded-lg ">
+        Logout
+      </button>
+    </div>
+  </aside>
+
+
+
+  <main class="flex-1 p-8">
+    <h1 class="text-4xl font-bold text-blue-600 animate-bounce">WELCOME TO JOB LADDER</h1>
+    <p class="mt-4 text-lg text-blue-800">
+      Use the sidebar to navigate through different profiles and search for jobs.
+    </p>
+</main>
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<< sidenavbar>>>>>>>>>>>>>>>>>>>>>>>>> --> 
+
+</body>
+</html>

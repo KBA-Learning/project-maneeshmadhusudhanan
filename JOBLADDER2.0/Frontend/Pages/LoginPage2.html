@@ -1,0 +1,186 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Ladder - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <header class="bg-blue-600 text-white py-6">
+        <nav class="mx-auto flex justify-between items-center">
+          <img
+            style="width: 200px; height: 150px; padding-left: 50px;"
+            src="/Frontend/src/Images/JOB LADDER.jpg"
+            alt="Job Ladder Logo"
+          />
+          <a href="#" class="animate-bounce mr-96 text-5xl font-extrabold">
+            JOB LADDER
+          </a>
+          <ul class="flex items-center">
+            <li class="mr-4">
+              <a href="#" class="text-3xl mr-28 hover:border-blue-700">
+                Job Seekers
+              </a>
+            </li>
+            <li class="mr-4">
+              <a href="#" class="text-3xl mr-16">Employers</a>
+            </li>
+            <li>
+              <a href="/Frontend/Pages/SignupPage.html"
+                class="font-extrabold text-3xl mr-20">
+                JOIN JOB LADDER
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="ml-80 mb-10 mt-32 flex">
+      <div
+        class="w-full max-w-md p-8 space-y-6 bg-blue-950 border-4 rounded-md shadow-2xl shadow-blue-600 border-blue-600">
+        <h2 class="text-3xl font-bold text-center text-blue-800 mt-4">
+          LOGIN TO JOB LADDER
+        </h2>
+        <form class="mt-6">
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-blue-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-2 mt-1 border border-blue-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-blue-700">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full p-2 mt-1 border border-blue-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+            />
+          </div>
+
+          <!-- Radio Buttons for User Role -->
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-blue-700 mb-2">
+              Select Role
+            </label>
+            <div class="flex space-x-4">
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="role"
+                  value="user"
+                  class="text-blue-600 focus:ring focus:ring-blue-500"
+                />
+                <span class="ml-2 text-blue-800">User</span>
+              </label>
+
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="role"
+                  value="employer"
+                  class="text-blue-600 focus:ring focus:ring-blue-500"
+                />
+                <span class="ml-2 text-blue-800">Employer</span>
+              </label>
+
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="role"
+                  value="admin"
+                  class="text-blue-600 focus:ring focus:ring-blue-500"
+                />
+                <span class="ml-2 text-blue-800">Admin</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <input
+                id="remember_me"
+                type="checkbox"
+                class="w-4 h-4 text-blue-600 border-blue-300 rounded"
+              />
+              <label for="remember_me" class="ml-2 text-sm text-blue-900">
+                Remember me
+              </label>
+            </div>
+            <a href="#" class="text-sm text-blue-600 hover:text-blue-500">
+              Forgot password?
+            </a>
+          </div>
+
+          <!-- Separate Login Buttons for Each Role -->
+          <div class="flex justify-between mt-6 gap-4">
+            <button
+              type="submit"
+              class="w-1/3 px-4 py-2 font-bold text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none">
+              User Login
+            </button>
+            <button
+              type="submit"
+              class="w-1/3 px-4 py-2 font-bold text-white bg-green-600 rounded-md hover:bg-green-500 focus:outline-none">
+              Employer Login
+            </button>
+            <button
+              type="submit"
+              class="w-1/3 px-4 py-2 font-bold text-white bg-red-600 rounded-md hover:bg-red-500 focus:outline-none">
+              Admin Login
+            </button>
+          </div>
+        </form>
+
+        <p class="text-sm text-center text-blue-600 mt-4">
+          Don't have an account?
+          <a href="#" class="text-blue-600 hover:text-blue-900">Sign up</a>
+        </p>
+      </div>
+
+      <div style="padding-left: 300px;">
+        <h3
+          class="text-center text-4xl mr-10 ml-10 mb-10 font-extrabold text-gray-600">
+          We're here to take the stress out of recruiting
+        </h3>
+        <img
+          style="width: 350px; height: 500px;"
+          src="/Frontend/src/Images/Ladder guy.gif"
+          alt="Ladder Guy"
+        />
+      </div>
+    </div>
+
+    <div class="mt-96 shadow-lg">
+      <footer class="bg-blue-600 text-white py-10">
+        <nav class="mx-auto flex justify-between items-center ml-10">
+          <ul class="flex items-center">
+            <li class="mr-4"><a href="#" class="text-2xl">About Us</a></li>
+            <li class="mr-4"><a href="#" class="text-2xl">Contact Us</a></li>
+            <li><a href="#" class="text-2xl">Terms of Service</a></li>
+          </ul>
+          <ul class="flex items-center mr-10">
+            <li class="mr-4"><a href="#" class="text-xl">Facebook</a></li>
+            <li class="mr-4"><a href="#" class="text-xl">Twitter</a></li>
+            <li><a href="#" class="text-xl">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

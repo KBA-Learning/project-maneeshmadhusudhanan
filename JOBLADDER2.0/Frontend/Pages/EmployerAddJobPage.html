@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer - Add Jobs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <nav class="flex justify-between items-center px-10">
+            <a href="#" class="text-3xl font-extrabold hover:scale-110 transition">JOB LADDER - Employer Dashboard</a>
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:underline">Chat</a></li>
+                <li><a href="#" class="hover:underline">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-8">
+        <h1 class="text-4xl text-center font-bold text-blue-600 animate-bounce">Manage Jobs</h1>
+
+        <div class="flex justify-center mt-10">
+            <form class="bg-blue-50 p-8 rounded-lg shadow-xl w-3/4 transition hover:scale-105 duration-300">
+                <div class="mb-4">
+                    <label class="block text-lg text-blue-700">Job Title</label>
+                    <input type="text" placeholder="Enter Job Title" class="w-full border rounded-lg p-2 focus:ring focus:ring-blue-300">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-lg text-blue-700">Job Description</label>
+                    <textarea placeholder="Enter Job Description" class="w-full border rounded-lg p-2 h-32 focus:ring focus:ring-blue-300"></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-lg text-blue-700">Job Type</label>
+                    <select class="w-full border rounded-lg p-2 focus:ring focus:ring-blue-300">
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Internship</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-lg text-blue-700">Salary</label>
+                    <input type="number" placeholder="Enter Salary" class="w-full border rounded-lg p-2 focus:ring focus:ring-blue-300">
+                </div>
+
+                <div class="flex gap-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 transform hover:scale-105">
+                        Add Job
+                    </button>
+                    <button class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition duration-300 transform hover:scale-105">
+                        Remove Job
+                    </button>
+                    <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                        Edit Job
+                    </button>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition duration-300 transform hover:scale-105">
+                        Check Status
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-blue-600 animate-pulse">Saved User Profiles</h2>
+            <table class="w-full mt-6 border shadow-lg">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="p-4">Name</th>
+                        <th class="p-4">Email</th>
+                        <th class="p-4">Phone</th>
+                        <th class="p-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-blue-50">
+                    <tr class="text-center border-b">
+                        <td class="p-4">John Doe</td>
+                        <td class="p-4">john@example.com</td>
+                        <td class="p-4">+1234567890</td>
+                        <td class="p-4">
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition transform hover:scale-110">View</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4 mt-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <p>© 2024 JOB LADDER. All rights reserved.</p>
+                <ul class="flex gap-6">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

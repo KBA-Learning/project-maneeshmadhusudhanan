@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - Foondit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-slideIn {
+        animation: slideIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-100 flex items-center justify-center h-screen">
+    <div
+      class="bg-white p-6 rounded-lg shadow-md w-full max-w-md animate-slideIn"
+    >
+      <div class="flex justify-center mb-6">
+        <img
+          src="https://example.com/logo.png"
+          alt="Foondit Logo"
+          class="w-24"
+        />
+      </div>
+
+      <h1 class="text-2xl font-bold text-center mb-4 animate-fadeIn">
+        Create Your Account
+      </h1>
+
+      <div class="flex justify-center space-x-4 mb-6 animate-slideIn">
+        <button
+          class="bg-blue-500 text-white py-2 px-4 rounded-lg flex items-center"
+        >
+          <img
+            src="https://example.com/google-icon.png"
+            alt="Google"
+            class="w-5 mr-2"
+          />
+          Google
+        </button>
+        <button
+          class="bg-blue-600 text-white py-2 px-4 rounded-lg flex items-center"
+        >
+          <img
+            src="https://example.com/facebook-icon.png"
+            alt="Facebook"
+            class="w-5 mr-2"
+          />
+          Facebook
+        </button>
+      </div>
+
+      <div class="text-center text-blue-500 mb-4">OR</div>
+
+      <form action="#" method="POST" class="space-y-4 animate-slideIn">
+        <div>
+          <label for="mobile" class="block text-blue-700"
+            >Mobile Number <span class="text-blue-500">*</span></label
+          >
+          <div class="flex">
+            <select class="bg-blue-100 border border-blue-300 p-2 rounded-l-md">
+              <option value="+91">+91</option>
+              <!-- Add more options as needed -->
+            </select>
+            <input
+              type="text"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter your mobile number"
+              class="w-full border border-blue-300 p-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-blue-700"
+            >Email ID <span class="text-blue-500">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email ID"
+            class="w-full border border-blue-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          />
+        </div>
+
+        <div>
+          <label for="password" class="block text-blue-700"
+            >Password <span class="text-blue-500">*</span></label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Minimum 6 characters"
+            class="w-full border border-blue-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          />
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            id="whatsapp"
+            name="whatsapp"
+            class="h-5 w-5 text-green-500 focus:ring-green-500 rounded"
+          />
+          <label for="whatsapp" class="text-blue-700"
+            >Receive recruiter notifications on WhatsApp</label
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300"
+        >
+          Continue
+        </button>
+
+        <p class="text-center text-sm text-blue-500 mt-4">
+          By clicking on 'Continue' I agree to Foondit's
+          <a href="#" class="text-purple-500 hover:underline"
+            >Terms and Conditions</a
+          >,
+          <a href="#" class="text-purple-500 hover:underline">Privacy Policy</a
+          >, and default mailer settings.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

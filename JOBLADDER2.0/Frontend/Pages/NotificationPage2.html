@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-blue-400 to-blue-900 text-white">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-700 py-6">
+      <nav class="mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-extrabold animate-bounce ml-10">
+          NOTIFICATIONS
+        </h1>
+        <ul class="flex items-center gap-8 mr-10">
+          <li>
+            <a
+              href="/Frontend/Pages/HomePage4.html"
+              class="hover:text-blue-300 text-2xl font-bold mr-10"
+              >SEARCH JOBS</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Frontend/Pages/MyJobsPage.html"
+              class="hover:text-blue-300 text-2xl font-bold"
+              >MY JOBS</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Frontend/Pages/UserProfile.html"
+              class="hover:text-blue-300 text-2xl font-bold"
+              >PROFILE</a
+            >
+          </li>
+          <li>
+            <a href="" class="hover:text-red-600 text-2xl font-bold">LOGOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Notifications Section -->
+    <div
+      class="mx-auto mt-40 mb-4 p-4 bg-gradient-to-r from-blue-400 to-blue-800 rounded-lg shadow-lg ml-10 mr-10"
+    >
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-blue-300">
+          Your Notifications
+        </h2>
+        <p class="mt-2 text-blue-200 font-semibold">
+          Manage your notifications below.
+        </p>
+      </div>
+
+      <!-- Notification List -->
+      <div class="mt-8 ml-10 mr-10">
+        <ul id="notificationList" class="space-y-4">
+          <!-- Notification 1 -->
+          <li
+            class="flex justify-between items-center bg-gradient-to-l from-blue-600 to-blue-700 p-4 rounded-md shadow"
+            data-status="unread"
+          >
+            <div>
+              <h3 class="text-xl font-bold">New Job Alert!</h3>
+              <p>Frontend Developer position available at Tech Solutions.</p>
+              <p class="text-blue-300 text-sm">Unread</p>
+            </div>
+            <div class="space-x-4">
+              <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                onclick="markAsRead(this)"
+              >
+                READ
+              </button>
+              <button
+                class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:scale-110 transition-transform duration-300"
+                onclick="deleteNotification(this)"
+              >
+                DELETE
+              </button>
+            </div>
+          </li>
+
+          <!-- Notification 2 -->
+          <li
+            class="flex justify-between items-center bg-gradient-to-l from-blue-600 to-blue-700 p-4 rounded-md shadow"
+            data-status="unread"
+          >
+            <div>
+              <h3 class="text-xl font-bold">Application Status</h3>
+              <p>Your application for Backend Engineer is under review.</p>
+              <p class="text-blue-300 text-sm">Unread</p>
+            </div>
+            <div class="space-x-4">
+              <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                onclick="markAsRead(this)"
+              >
+                READ
+              </button>
+              <button
+                class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:scale-110 transition-transform duration-300"
+                onclick="deleteNotification(this)"
+              >
+                DELETE
+              </button>
+            </div>
+          </li>
+
+          <!-- Notification 3 -->
+          <li
+            class="flex justify-between items-center bg-gradient-to-l from-blue-600 to-blue-700 p-4 rounded-md shadow"
+            data-status="unread"
+          >
+            <div>
+              <h3 class="text-xl font-bold">Job Interview Scheduled</h3>
+              <p>Interview for UI/UX Designer scheduled for Oct 24th.</p>
+              <p class="text-blue-300 text-sm">Unread</p>
+            </div>
+            <div class="space-x-4">
+              <button
+                class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+                onclick="markAsRead(this)"
+              >
+                READ
+              </button>
+              <button
+                class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:scale-110 transition-transform duration-300"
+                onclick="deleteNotification(this)"
+              >
+                DELETE
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <!-- Footer -->
+    <div class="bg-gradient-to-r from-blue-400 to-blue-700 mt-60">
+      <div class="max-w-2xl ml-10 mr-10">
+        <div class="gap-40 mb-4 flex">
+          <div>
+            <p class="font-extrabold text-9xl">JOB LADDER</p>
+            <div class="mt-8">
+              <p class="mt-4 text-xl">
+                Job Ladder is a comprehensive job recruitment platform designed
+                to streamline the hiring process for employers and job seekers.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 text-xl">
+            <p class="text-base font-bold tracking-wide">Contacts</p>
+            <div class="flex">
+              <p class="mr-1 font-semibold">Phone:</p>
+              <a href="tel:850-123-5021" class="hover:text-blue-300"
+                >+918281422036</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 font-semibold">Email:</p>
+              <a href="mailto:info@lorem.mail" class="hover:text-blue-300"
+                >user@example.com</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 font-semibold">Address:</p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-blue-300"
+                >Thiruvananthapuram, KERALA, INDIA</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row bg-gradient-to-r from-blue-900 to-blue-800 pl-4 pr-4"
+      >
+        <p class="text-sm">© MANEESHroks@KBA.in OCT-24-2024</p>
+        <ul class="flex space-x-5">
+          <li>
+            <a href="/" class="text-sm hover:text-blue-300">KBA Project</a>
+          </li>
+          <li>
+            <a href="/" class="text-sm hover:text-blue-300">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/" class="text-sm hover:text-blue-300"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function deleteNotification(button) {
+        const notification = button.closest("li");
+        notification.remove();
+      }
+
+      function markAsRead(button) {
+        const notification = button.closest("li");
+        notification.querySelector("p:last-child").textContent = "Read";
+        notification.setAttribute("data-status", "read");
+      }
+    </script>
+  </body>
+</html>

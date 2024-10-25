@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Saved Jobs</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body class="bg-green-100">
+        <!-- Header Section -->
+        <header class="bg-green-600 text-white py-6">
+          <nav class="mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold animate-bounce ml-10">
+              SAVED JOBS
+            </h1>
+            <ul class="flex items-center gap-8 mr-10">
+              <li>
+                <a href="/Frontend/Pages/HomePage4.html" 
+                  class="hover:text-green-300 text-2xl font-bold mr-10"
+                  >SEARCH JOBS</a>
+              </li>
+              <li>
+                <a href="/Frontend/Pages/MyJobsPage.html" 
+                  class="hover:text-green-300 text-2xl font-bold"
+                  >MY JOBS</a>
+              </li>
+              <li>
+                <a href="/Frontend/Pages/UserProfile.html" 
+                  class="hover:text-green-300 text-2xl font-bold"
+                  >PROFILE</a>
+              </li>
+              <li>
+                <a href="" 
+                  class="hover:text-red-600 text-2xl font-bold"
+                  >LOGOUT</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+    
+        <!-- Saved Jobs Section -->
+        <div class="mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg ml-10 mr-10">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-green-700">Your Saved Jobs</h2>
+            <p class="mt-2 text-green-600 font-semibold">Manage your saved jobs below.</p>
+          </div>
+    
+          <!-- Job List -->
+          <div class="mt-8 ml-10 mr-10">
+            <ul class="space-y-4">
+              <!-- Job Item 1 -->
+              <li class="flex justify-between items-center bg-green-50 p-4 rounded-md shadow">
+                <div>
+                  <h3 class="text-xl font-bold text-green-800">Frontend Developer</h3>
+                  <p class="text-green-700">Company: Tech Solutions</p>
+                  <p class="text-green-500">Location: Remote</p>
+                </div>
+                <button
+                  class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
+                  onclick="deleteJob(this)"
+                >
+                  DELETE
+                </button>
+              </li>
+    
+              <!-- Job Item 2 -->
+              <li class="flex justify-between items-center bg-green-50 p-4 rounded-md shadow">
+                <div>
+                  <h3 class="text-xl font-bold text-green-800">Backend Engineer</h3>
+                  <p class="text-green-700">Company: DataWorks Inc.</p>
+                  <p class="text-green-500">Location: New York</p>
+                </div>
+                <button
+                  class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
+                  onclick="deleteJob(this)"
+                >
+                  DELETE
+                </button>
+              </li>
+    
+              <!-- Job Item 3 -->
+              <li class="flex justify-between items-center bg-green-50 p-4 rounded-md shadow">
+                <div>
+                  <h3 class="text-xl font-bold text-green-800">UI/UX Designer</h3>
+                  <p class="text-green-700">Company: Creative Studio</p>
+                  <p class="text-green-500">Location: San Francisco</p>
+                </div>
+                <button
+                  class="bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
+                  onclick="deleteJob(this)"
+                >
+                  DELETE
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Footer -->
+        <div class="bg-green-200 mt-10">
+          <div class="max-w-2xl ml-10 mr-10">
+            <div class="gap-40 mb-4 flex">
+              <div>
+                <p class="font-extrabold text-9xl">JOB LADDER</p>
+                <div class="mt-8">
+                  <p class="mt-4 text-xl text-green-800">
+                    Job Ladder is a comprehensive job recruitment platform designed to streamline the hiring process for both employers and job seekers.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4 text-xl">
+                <p class="text-base font-bold tracking-wide text-green-900">Contacts</p>
+                <div class="flex">
+                  <p class="mr-1 text-green-800 font-semibold">Phone:</p>
+                  <a href="tel:850-123-5021" class="hover:text-green-800">+918281422036</a>
+                </div>
+                <div class="flex">
+                  <p class="mr-1 text-green-800 font-semibold">Email:</p>
+                  <a href="mailto:info@lorem.mail" class="hover:text-green-800">user@example.com</a>
+                </div>
+                <div class="flex">
+                  <p class="mr-1 text-green-800 font-semibold">Address:</p>
+                  <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" class="hover:text-green-800">Thiruvananthapuram, KERALA, INDIA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row bg-green-600 pl-4 pr-4">
+            <p class="text-sm text-white">© USER@KBA.in OCT-24-2024</p>
+            <ul class="flex space-x-5">
+              <li><a href="/" class="text-sm text-white hover:text-green-400">KBA Project</a></li>
+              <li><a href="/" class="text-sm text-white hover:text-green-400">Privacy Policy</a></li>
+              <li><a href="/" class="text-sm text-white hover:text-green-400">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <script>
+          function deleteJob(button) {
+            const jobItem = button.closest('li');
+            jobItem.remove();
+          }
+        </script>
+      </body>
+    </html>
+    
+
+
+
+    
+</body>
+</html>
