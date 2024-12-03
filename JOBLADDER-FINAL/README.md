@@ -45,7 +45,4 @@ JobLadder is a **job management platform** that facilitates seamless interaction
 
 ---
 
-## 🎥 Explore JobLadder  
-
-📽 **Check out the video demo here:**  
-[![Watch on YouTube](https://img.youtube.com/vi/2Jg7RhepY54/0.jpg)](https://youtu.be/2Jg7RhepY54?si=OlL95C26WD1Bsb2J)  
+  
