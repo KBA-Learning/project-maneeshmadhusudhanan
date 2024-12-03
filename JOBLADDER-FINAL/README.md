@@ -1,7 +1,7 @@
-# 🚀 JobLadder  
+# 🚀 JobLadder
 
-[![Watch on YouTube](https://img.youtube.com/vi/iq67tvMeoWM/0.jpg)](https://youtu.be/2Jg7RhepY54?si=c41KviyhWsjcQQeb)  
-**Watch the video to learn more about JobLadder!**  
+  [![Watch on YouTube](https://img.youtube.com/vi/2Jg7RhepY54/0.jpg)](https://youtu.be/2Jg7RhepY54?si=OlL95C26WD1Bsb2J)  
+**🎥 Watch the video to learn more about JobLadder!**
 
 JobLadder is a **job management platform** that facilitates seamless interactions between **Users**, **Employers**, and **Admins**. Whether you're searching for a job, posting opportunities, or managing the platform, JobLadder makes the process intuitive and efficient.  
 
@@ -48,4 +48,4 @@ JobLadder is a **job management platform** that facilitates seamless interaction
 ## 🎥 Explore JobLadder  
 
 📽 **Check out the video demo here:**  
-[![Watch on YouTube](https://img.youtube.com/vi/iq67tvMeoWM/0.jpg)](https://youtu.be/2Jg7RhepY54?si=c41KviyhWsjcQQeb)  
+[![Watch on YouTube](https://img.youtube.com/vi/2Jg7RhepY54/0.jpg)](https://youtu.be/2Jg7RhepY54?si=OlL95C26WD1Bsb2J)  
